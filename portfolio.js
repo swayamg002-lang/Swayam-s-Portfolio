@@ -142,26 +142,6 @@ document.querySelectorAll("[data-brief]").forEach(button => button.addEventListe
   document.querySelector("#contact").scrollIntoView();
   form.elements.name.focus({ preventScroll: true });
 }));
-form?.addEventListener("submit", async event => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const brief = ["Project brief", "Name: " + data.get("name"), "Service: " + data.get("service"), "", data.get("idea")].join("\n");
-  const feedback = document.querySelector("#feedback");
-  const fallback = document.querySelector("#copy-fallback");
-  try {
-    await navigator.clipboard.writeText(brief);
-    fallback.hidden = true;
-    feedback.textContent = "Brief copied. Paste it into a message to share it.";
-  } catch {
-    fallback.value = brief;
-    fallback.hidden = false;
-    fallback.select();
-    feedback.textContent = "Your brief is ready to copy below.";
-  }
-});
-
-
-
 const featuredVideo = document.querySelector("#tara-film");
 if (featuredVideo) {
   const featuredPlay = document.querySelector("#tara-play");
