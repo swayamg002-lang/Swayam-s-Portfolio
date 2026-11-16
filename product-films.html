@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Films | Swayam Gupta</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body class="collection-page" id="top">
+  <header class="nav wrap">
+    <a class="wordmark" href="index.html">Swayam Gupta<span aria-hidden="true">.</span></a>
+    <a class="pill outline" href="index.html#product-films">&larr; Back to work</a>
+  </header>
+  <main id="work">
+    <section class="work wrap" id="product-films" aria-labelledby="collection-title">
+      <div class="section-head"><h1 id="collection-title">Product Films</h1></div>
+      <div class="gallery" data-gallery="product" data-show-all></div>
+      <a class="gallery-toggle pill outline" href="medical-animation.html">Medical Animation &rarr;</a>
+    </section>
+  </main>
+<dialog id="player" aria-labelledby="film-title">
+  <div class="dialog-top"><div><p class="kicker" id="film-category"></p><h2 id="film-title"></h2></div><button type="button" class="circle close" aria-label="Close film">×</button></div>
+  <video controls playsinline preload="metadata" aria-labelledby="film-title"></video><p id="playback-status" role="status" hidden></p>
+  <div class="dialog-bottom"><p id="film-description"></p><div class="film-controls"><button type="button" class="pill outline" id="previous">← Previous</button><button type="button" class="pill outline" id="next">Next →</button></div></div>
+</dialog>
+<template id="card">
+  <article class="card">
+    <button class="card-button" type="button" aria-haspopup="dialog">
+      <span class="frame"><img alt="" loading="lazy" decoding="async"><span class="preview-title" aria-hidden="true" hidden></span><span class="explore-pill preview-explore" aria-hidden="true">Explore <span>&rarr;</span></span></span>
+      <span class="caption">
+        <span><small></small><strong></strong></span>
+        <span aria-hidden="true">&nearr;</span>
+      </span>
+    </button>
+  </article>
+</template>
+</body>
+</html>

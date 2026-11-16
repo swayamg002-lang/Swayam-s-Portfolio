@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Swayam Gupta is a 3D Designer creating medical animations and creative product films.">
+<title>Swayam Gupta — 3D Designer</title>
+<link rel="stylesheet" href="style.css">
+<script src="portfolio.js" defer></script>
+</head>
+<body id="top">
+<div class="opening" aria-hidden="true">
+  <span class="opening-name">Swayam Gupta</span>
+  <span class="opening-role">3D Designer</span>
+</div>
+<header class="nav wrap"><a class="wordmark" href="#top">Swayam Gupta<span aria-hidden="true">.</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#services">Services</a></nav><a class="pill outline" href="#contact">Start a project <span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="hero hero-tara" aria-label="Featured film">
+  <video id="tara-film" muted playsinline loop preload="metadata" aria-label="Tara, featured film">
+    <source src="media/tara.mp4" type="video/mp4">
+  </video>
+  <div class="tara-caption">
+    <a class="hero-work" href="#work">Explore work <span aria-hidden="true">↘</span></a>
+  </div>
+  <div class="tara-controls" role="group" aria-label="Featured film controls">
+    <button class="pill" id="tara-play" type="button">Play film</button>
+    <button class="pill" id="tara-sound" type="button">Unmute</button>
+  </div>
+  <p class="tara-status" id="tara-status" role="status" hidden></p>
+</section>
+<section class="brands" aria-label="Brands I’ve worked with">
+  <div class="brands-viewport" id="brand-loop">
+    <div class="brands-track">
+      <ul class="brands-list">
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/files/KnitPro_Logo_PNG-1.png?v=1751020423&amp;width=400" alt="" onerror="this.onerror=null;this.src='https://cdn-media.knitpro.eu/media/resources/knitpro_international_3.jpg'" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>KnitPro</span></li>
+    <li><img src="https://tmcms-docs.uspto.gov/cases/85429422/mark/large.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Knitter’s Pride</span></li>
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/articles/Lantern_Moon_Logo.png?v=1765962129" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Lantern Moon</span></li>
+    <li><img src="https://www.whitevox.com/wp-content/uploads/2024/10/Bikano-logo.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Bikano</span></li>
+    <li><img src="https://bikanervala.com/cdn/shop/files/Bikanervala-Logo_560X420_0372e44d-2375-4216-9b26-790365f11dbd.jpg?v=1711090428&amp;width=560" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Bikanervala</span></li>
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/collections/Oxford_Company_Logo.png?v=1757452091" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>The Oxford Company</span></li>
+    <li><img src="https://www.kavia.ai/images/partners/tata_logo_new.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Tata Elxsi Ltd.</span></li>
+    <li><span class="brand-wordmark" aria-hidden="true">ERemedium</span><span>ERemedium</span></li>
+  </ul>
+      <ul class="brands-list" aria-hidden="true">
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/files/KnitPro_Logo_PNG-1.png?v=1751020423&amp;width=400" alt="" onerror="this.onerror=null;this.src='https://cdn-media.knitpro.eu/media/resources/knitpro_international_3.jpg'" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>KnitPro</span></li>
+    <li><img src="https://tmcms-docs.uspto.gov/cases/85429422/mark/large.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Knitter’s Pride</span></li>
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/articles/Lantern_Moon_Logo.png?v=1765962129" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Lantern Moon</span></li>
+    <li><img src="https://www.whitevox.com/wp-content/uploads/2024/10/Bikano-logo.jpg" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Bikano</span></li>
+    <li><img src="https://bikanervala.com/cdn/shop/files/Bikanervala-Logo_560X420_0372e44d-2375-4216-9b26-790365f11dbd.jpg?v=1711090428&amp;width=560" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Bikanervala</span></li>
+    <li><img src="https://shop.knitmcintosh.com/cdn/shop/collections/Oxford_Company_Logo.png?v=1757452091" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>The Oxford Company</span></li>
+    <li><img src="https://www.kavia.ai/images/partners/tata_logo_new.png" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"><span>Tata Elxsi Ltd.</span></li>
+    <li><span class="brand-wordmark" aria-hidden="true">ERemedium</span><span>ERemedium</span></li>
+  </ul>
+    </div>
+  </div>
+</section>
+<div id="work">
+  <section class="work wrap" id="product-films" aria-labelledby="product-title">
+    <div class="section-head"><h2 id="product-title">Product Films<span>.</span></h2></div>
+    <div class="gallery" id="product-gallery" data-gallery="product"></div>
+    <a class="gallery-toggle pill outline" href="product-films.html">View all 6 product films &rarr;</a>
+  </section>
+  <section class="work wrap" id="medical-animation" aria-labelledby="medical-title">
+    <div class="section-head"><h2 id="medical-title">Medical Animation<span>.</span></h2></div>
+    <div class="gallery" id="medical-gallery" data-gallery="medical"></div>
+    <a class="gallery-toggle pill outline" href="medical-animation.html">View all 5 medical animations &rarr;</a>
+  </section>
+</div>
+<section class="services" id="services" aria-labelledby="service-title"><div class="wrap section-inner">
+  <p class="kicker"><i></i> SERVICES</p><h2 id="service-title">What I make<span>.</span></h2>
+  <div class="service-grid">
+  <article><h3>3D medical<br>animation</h3><p>Anatomy, procedures, and medical devices explained through clear, purposeful animation.</p><button class="text-link" type="button" data-brief="Medical animation">Brief a medical explainer ↗</button></article>
+  <article><h3>Creative 3D<br>product films</h3><p>Launch films and campaign visuals that use lighting, materials, and motion to show what makes a product distinct.</p><button class="text-link" type="button" data-brief="Product film">Brief a product film ↗</button></article>
+  </div>
+</div></section>
+<section class="contact wrap" id="contact" aria-labelledby="contact-title">
+  <div><p class="kicker"><i></i> PROJECT INQUIRIES</p><h2 id="contact-title">Let’s make<br>it move<span>.</span></h2><p class="lede">Put together a short project brief you can copy and share.</p></div>
+  <form id="brief"><label>Your name<input name="name" autocomplete="name" required placeholder="Name or team"></label><label>Project type<select name="service"><option>Medical animation</option><option>Product film</option><option>Something else</option></select></label><label>What are you making?<textarea name="idea" required rows="4" placeholder="Tell me about the idea, audience, and timeline."></textarea></label><button class="pill primary" type="submit">Copy project brief ↗</button><div id="feedback" role="status"></div><textarea id="copy-fallback" aria-label="Project brief ready to copy" rows="5" readonly hidden></textarea></form>
+</section>
+</main>
+<footer class="wrap"><a class="wordmark" href="#top">Swayam Gupta<span aria-hidden="true">.</span></a><a href="#top">Back to top ↑</a></footer>
+<dialog id="player" aria-labelledby="film-title">
+  <div class="dialog-top"><div><p class="kicker" id="film-category"></p><h2 id="film-title"></h2></div><button type="button" class="circle close" aria-label="Close film">×</button></div>
+  <video controls playsinline preload="metadata" aria-labelledby="film-title"></video><p id="playback-status" role="status" hidden></p>
+  <div class="dialog-bottom"><p id="film-description"></p><div class="film-controls"><button type="button" class="pill outline" id="previous">← Previous</button><button type="button" class="pill outline" id="next">Next →</button></div></div>
+</dialog>
+<template id="card">
+  <article class="card">
+    <button class="card-button" type="button" aria-haspopup="dialog">
+      <span class="frame"><img alt="" loading="lazy" decoding="async"><span class="preview-title" aria-hidden="true" hidden></span><span class="explore-pill preview-explore" aria-hidden="true">Explore <span>&rarr;</span></span></span>
+      <span class="caption">
+        <span><small></small><strong></strong></span>
+        <span aria-hidden="true">&nearr;</span>
+      </span>
+    </button>
+  </article>
+</template>
+</body>
+</html>
