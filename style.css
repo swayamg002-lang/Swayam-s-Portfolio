@@ -268,3 +268,59 @@ body.collection-page > .nav .outline { border-color: currentColor; }
   font-size: clamp(36px, 7vw, 96px);
   line-height: 1;
 }
+
+/* Balanced medical previews and consistent collection rows. */
+#medical-animation {
+  justify-content: flex-start;
+}
+#medical-animation .gallery {
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 32px 24px;
+}
+.collection-page #medical-animation .gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+#medical-animation .card,
+#medical-animation .caption > span:first-child {
+  min-width: 0;
+}
+#medical-animation .card-button {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#medical-animation .frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  flex: none;
+}
+#medical-animation .frame img {
+  object-fit: contain;
+  object-position: center;
+}
+#medical-animation .caption {
+  align-items: flex-start;
+  width: 100%;
+}
+#medical-animation .caption strong {
+  font-size: clamp(18px, 1.6vw, 25px);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+#medical-animation .caption > span:last-child {
+  flex: none;
+}
+@media (max-width: 1050px) {
+  .collection-page #medical-animation .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  #medical-animation .gallery,
+  .collection-page #medical-animation .gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

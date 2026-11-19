@@ -14,6 +14,15 @@ const films = [
   {"id": "laminotomy", youtubeId: "uOmWy19itHU", "title": "Endoscopic Lumbar Laminotomy", "kind": "medical", "additional": true, "hasPoster": true},
   {"id": "hfmd", youtubeId: "X-0RWPfyxrA", "title": "Hand, Foot, and Mouth Disease", "kind": "medical", "additional": true, "hasPoster": true},
 ];
+// Keep featured medical films together at the start of the collection.
+const medicalOrder = ["fetal", "anomaly", "laminotomy", "hfmd", "cmc-arthritis", "mps", "tracheal-stenosis", "spondylolisthesis"];
+const medicalFilms = films.filter(film => film.kind === "medical");
+medicalFilms.sort((a, b) => {
+  const aIndex = medicalOrder.indexOf(a.id);
+  const bIndex = medicalOrder.indexOf(b.id);
+  return (aIndex < 0 ? medicalOrder.length : aIndex) - (bIndex < 0 ? medicalOrder.length : bIndex);
+});
+const orderedFilms = [...films.filter(film => film.kind === "product"), ...medicalFilms];
 const filmById = new Map(films.map(film => [film.id, film]));
 const label = film => film.kind === "medical" ? "3D Medical Animation" : "3D Product Film";
 const poster = film => film.hasPoster === false ? "" : "media/" + film.id + (film.kind === "medical" ? ".png" : ".jpg");
@@ -40,7 +49,7 @@ const next = document.querySelector("#next");
 let playerFilms = films;
 let activeFilm;
 
-for (const film of films) {
+for (const film of orderedFilms) {
   const gallery = document.querySelector('[data-gallery="' + film.kind + '"]');
   if (!gallery || (film.additional && !gallery.hasAttribute("data-show-all"))) continue;
   const item = card.content.cloneNode(true);
