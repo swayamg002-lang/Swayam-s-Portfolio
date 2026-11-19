@@ -8,7 +8,7 @@ const films = [
   {"id": "tara-draft-4", title: "Tara Master Film", youtubeId: "J56ESa0BSv0", "kind": "product", "additional": true, "hasPoster": false},
   {"id": "vibe-teaser", title: "Vybe Teaser", youtubeId: "IKADs9O-9Mw", "kind": "product", "additional": true, "hasPoster": false},
   {"id": "cmc-arthritis", youtubeId: "28l5s2X7ufI", "title": "First CMC Joint Arthritis", "kind": "medical", "additional": true, "hasPoster": false},
-  {"id": "anomaly", youtubeId: "-BR4doX3TSk", "title": "Anomaly Scan", "kind": "medical", "additional": true, "hasPoster": true},
+  {"id": "anomaly", youtubeId: "-BR4doX3TSk", "title": "Anomaly Scan", "kind": "medical", "additional": false, "hasPoster": true},
   {"id": "laminotomy", youtubeId: "uOmWy19itHU", "title": "Endoscopic Lumbar Laminotomy", "kind": "medical", "additional": true, "hasPoster": true},
   {"id": "hfmd", youtubeId: "X-0RWPfyxrA", "title": "Hand, Foot, and Mouth Disease", "kind": "medical", "additional": true, "hasPoster": true},
 ];
